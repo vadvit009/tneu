@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="32691079-d662-4b0d-865b-edc96c11aaf1" name="Default Changelist" comment="" />
+    <list default="true" id="32691079-d662-4b0d-865b-edc96c11aaf1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/models/people.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/news/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/news/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/middleware/jwt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/middleware/jwt/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/models/conference.model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/models/news.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/models/news.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/routes/news.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/news.route.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +43,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1kNQUQHPykUBRSJVVRVQcBBtCCZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,13 +57,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api/contollers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vadvit009\Desktop\Projects\tneu-back\src\api\contollers" />
       <recent name="C:\Users\vadvit009\Desktop\Projects\tneu-back\src\api\models" />
+      <recent name="C:\Users\vadvit009\Desktop\Projects\tneu-back\src\api\routes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,17 +79,34 @@
       <workItem from="1605538586861" duration="6000" />
       <workItem from="1605708810404" duration="3863000" />
       <workItem from="1605904935118" duration="1136000" />
-      <workItem from="1605979972177" duration="4554000" />
+      <workItem from="1605979972177" duration="5346000" />
+      <workItem from="1606231602735" duration="1426000" />
+      <workItem from="1606309367755" duration="13724000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605905477516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605905477516" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1606395424815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606395424814" />
   </component>
 </project>

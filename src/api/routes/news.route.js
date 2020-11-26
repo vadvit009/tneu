@@ -5,22 +5,19 @@ const {
   getNew,
   createNew,
   deleteNew,
-  uploadPhoto,
   updateNew
 } = require("../contollers/news");
 
-const { verifyAdminToken } = require("../middleware/jwt");
+const {verifyAdminToken} = require("../middleware/jwt");
 
 app.get("/news",/*cache(3600),*/ getAllNews);
 
-app.get("/new/:id", getNew);
+app.get("/news/:id", getNew);
 
-app.post("/new",/* verifyAdminToken,*/ createNew);
+app.post("/news", verifyAdminToken, createNew);
 
-app.patch("/new/:id", updateNew);
+app.patch("/news/:id", verifyAdminToken, updateNew);
 
-app.post("/new/upload/:id", verifyAdminToken, uploadPhoto);
-
-app.delete("/new/:id", verifyAdminToken, deleteNew);
+app.delete("/news/:id", verifyAdminToken, deleteNew);
 
 module.exports = app;

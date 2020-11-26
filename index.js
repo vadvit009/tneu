@@ -8,7 +8,9 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const db = require("./src/db");
 const {
-  News
+  News,
+  People, Reviews,
+  Blog, Pages, Science, ScienceActivity, Vstup, ScienceProcess, User
 } = require("./src/api/routes");
 
 // parse application/x-www-form-urlencoded & application/json
@@ -24,7 +26,7 @@ app.disable("x-powered-by");
 app.use(cors());
 
 app.use(
-  "/api/v1",News
+  "/api/v1", News, People, Reviews, Blog, Pages, Science, ScienceActivity, Vstup, ScienceProcess, User
 );
 
 // use static

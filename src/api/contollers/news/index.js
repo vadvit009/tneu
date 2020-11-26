@@ -49,9 +49,10 @@ const createNew = (req, res, next) => {
     title,
     desc,
     gallery,
+    short_desc,
     type
   } = req.body;
-  const splitBase64 = gallery.split(',')[1];
+  const splitBase64 = gallery&&gallery.split(',')[1];
   const buffer = Buffer.from(splitBase64, 'base64');
   return News.create({
     title,
@@ -73,6 +74,7 @@ const updateNew = (req, res, next) => {
   const {
     title,
     desc,
+    short_desc,
   } = req.body;
   return News.findByIdAndUpdate(id, {
     title,
