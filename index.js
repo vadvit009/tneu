@@ -14,7 +14,7 @@ const {
 } = require("./src/api/routes");
 
 // parse application/x-www-form-urlencoded & application/json
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit:'50mb'}));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(cookieParser());

@@ -52,12 +52,14 @@ const createNew = (req, res, next) => {
     short_desc,
     type
   } = req.body;
-  const splitBase64 = gallery&&gallery.split(',')[1];
-  const buffer = Buffer.from(splitBase64, 'base64');
+  console.log(gallery)
+  // const splitBase64 = gallery && gallery.split(',')[1];
+  // const buffer = Buffer.from(splitBase64, 'base64');
   return News.create({
     title,
     desc,
-    gallery: {data: buffer, contentType: type},
+    short_desc,
+    gallery: [{data: gallery.data}],
     createdAt: Date.now(),
     updatedAt: Date.now(),
     deletedAt: null
@@ -74,16 +76,19 @@ const updateNew = (req, res, next) => {
   const {
     title,
     desc,
+    gallery,
     short_desc,
   } = req.body;
   return News.findByIdAndUpdate(id, {
     title,
     desc,
+    gallery: [{data: gallery.data}],
+    short_desc,
     updatedAt: Date.now(),
-  })
+  },{new:true})
     .then((singleNew) => {
       console.log("Update NEWS === ", singleNew);
-      res.send(singleNew._id)
+      res.send(singleNew)
     })
     .catch(err => console.log("ERROR WHEN CREATE NEWS === ", err))
 };

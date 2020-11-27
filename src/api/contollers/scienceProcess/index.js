@@ -25,6 +25,7 @@ const createScienceProcess = (req, res) => {
     short_desc,
     type
   } = req.body;
+  //todo gallery like news for all post and create
   const splitBase64 = gallery && gallery.split(',')[1];
   const buffer = Buffer.from(splitBase64, 'base64');
   return ScienceProcess.create({
