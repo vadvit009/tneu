@@ -10,7 +10,7 @@ const {
 
 const {verifyAdminToken} = require("../middleware/jwt");
 
-app.get("/sciences_activity",/*cache(3600),*/ getAllScienceActivity);
+app.get("/science_activity",/*cache(3600),*/ getAllScienceActivity);
 
 app.get("/science_activity/:id", getScienceActivity);
 

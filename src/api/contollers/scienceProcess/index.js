@@ -11,10 +11,12 @@ const getAllScienceProcess = async (req, res) => {
 
 const getScienceProcess = async (req, res) => {
   const {id} = req.params;
-  return await ScienceProcess.findById(id).exec((err, singleScienceProcess) => {
-    if (err) return res.send(err);
-    res.send(singleScienceProcess);
-  });
+  return await ScienceProcess
+    .findById(id)
+    .exec((err, singleScienceProcess) => {
+      if (err) return res.send(err);
+      res.send(singleScienceProcess);
+    });
 };
 
 const createScienceProcess = (req, res) => {
@@ -25,13 +27,10 @@ const createScienceProcess = (req, res) => {
     short_desc,
     type
   } = req.body;
-  //todo gallery like news for all post and create
-  const splitBase64 = gallery && gallery.split(',')[1];
-  const buffer = Buffer.from(splitBase64, 'base64');
+
   return ScienceProcess.create({
     title,
     desc,
-    gallery: {data: buffer, contentType: type},
     createdAt: Date.now(),
     updatedAt: Date.now(),
     deletedAt: null

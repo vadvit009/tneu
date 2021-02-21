@@ -15,12 +15,10 @@ const createBlog = (req, res, next) => {
     gallery,
     type
   } = req.body;
-  const splitBase64 = gallery&&gallery.split(',')[1];
-  const buffer = Buffer.from(splitBase64, 'base64');
+
   return Blog.create({
     title,
     desc,
-    gallery: {data: buffer, contentType: type},
     createdAt: Date.now(),
     updatedAt: Date.now(),
     deletedAt: null

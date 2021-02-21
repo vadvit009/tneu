@@ -1,33 +1,56 @@
 const {Peoples} = require("../../models");
+const path = require('path');
+const fs = require('fs');
 
-const getPeople = async (req, res) => {
+const multer = require('multer');
+const folderPath = path.resolve(__dirname, "../../../../build/assets/people/");
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const {id} = req.params;
+    if (!fs.existsSync(folderPath + "/" + id)) {
+      fs.mkdirSync(folderPath + "/" + id);
+    } else {
+      fs.rmdirSync(folderPath + "/" + id, {recursive: true});
+      fs.mkdirSync(folderPath + "/" + id);
+    }
+    cb(null, folderPath + "/" + id);
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+const upload = multer({storage: storage});
+const getPeople = (req, res) => {
   const {id} = req.params;
-  return await Peoples.findById(id).exec((err, singlePeople) => {
-    if (err) return res.send(err);
-    res.send(singlePeople);
-  });
+  return Peoples.findById(id)
+    .exec((err, singlePeople) => {
+      if (err) return res.send(err);
+      res.send(singlePeople);
+    });
 };
 
 const createPeople = (req, res, next) => {
   const {
-    title,
+    fName,
+    sName,
+    scienceLevel,
+    scienceTitle,
     desc,
-    gallery,
-    short_desc,
-    type
   } = req.body;
-  const splitBase64 = gallery&&gallery.split(',')[1];
-  const buffer = Buffer.from(splitBase64, 'base64');
   return Peoples.create({
-    title,
+    fName,
+    sName,
     desc,
-    gallery: {data: buffer, contentType: type},
+    scienceLevel,
+    scienceTitle,
     createdAt: Date.now(),
     updatedAt: Date.now(),
     deletedAt: null
   })
     .then((singlePeople) => {
-      console.log("CREATED NEWS === ", singlePeople);
+      console.log("CREATED singlePeople === ", singlePeople);
       res.send(singlePeople)
     })
     .catch(err => console.log("ERROR WHEN CREATE NEWS === ", err))
@@ -67,4 +90,27 @@ const getAllPeoples = async (req, res) => {
   });
 };
 
-module.exports = {getAllPeoples, getPeople, createPeople, updatePeople, deletePeople};
+const uploadPhoto = (req, res) => {
+  const {id} = req.params;
+
+  upload.single('gallery')(req, res, function (err) {
+    if (err instanceof multer.MulterError) {
+      console.log('ERR WHEN UPLOAD', err);
+      return res.sendStatus(500);
+    } else if (err) {
+      console.log('ERR WHEN UPLOAD', err);
+      return res.sendStatus(500);
+    }
+    const defaultUrl = "https://zunu.herokuapp.com/assets/people/";
+    console.log(req.file)
+    Peoples.findByIdAndUpdate(id, {gallery: defaultUrl + id + '/' + req.file.originalname})
+      .then(() => console.log("Updated successfully"))
+      .catch(err => {
+        console.log("ERROR WHEN UPLOAD NEWS === ", err);
+        res.sendStatus(400)
+      })
+    return res.status(200).send(req.file);
+  });
+}
+
+module.exports = {getAllPeoples, getPeople, createPeople, updatePeople, deletePeople, uploadPhoto};

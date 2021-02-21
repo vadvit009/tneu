@@ -20,10 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32691079-d662-4b0d-865b-edc96c11aaf1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/blog/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/contollers/news/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/news/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/people/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/people/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/reviews/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/reviews/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/science/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/science/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/scienceActivity/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/scienceActivity/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/contollers/scienceProcess/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/scienceProcess/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/contollers/vstup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/vstup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/models/news.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/models/news.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/models/people.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/models/people.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/routes/people.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/people.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/routes/science_activity.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/science_activity.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/routes/vstup.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/vstup.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +63,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api/contollers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -76,6 +96,11 @@
       <workItem from="1605979972177" duration="5346000" />
       <workItem from="1606231602735" duration="1426000" />
       <workItem from="1606309367755" duration="18808000" />
+      <workItem from="1613340403355" duration="678000" />
+      <workItem from="1613394506429" duration="599000" />
+      <workItem from="1613433301599" duration="629000" />
+      <workItem from="1613516119470" duration="9137000" />
+      <workItem from="1613942506112" duration="88000" />
     </task>
     <servers />
   </component>
@@ -92,15 +117,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605905477516">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605905477516" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1606433464457">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606433464457" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -4,7 +4,7 @@ const News = new mongoose.Schema({
   title: String,
   desc: String,
   short_desc: String,
-  gallery: [{data: Buffer, contentType: String}],
+  gallery: String
 }, {
   timestamp: true
 });

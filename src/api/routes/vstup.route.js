@@ -10,7 +10,7 @@ const {
 
 const {verifyAdminToken} = require("../middleware/jwt");
 
-app.get("/vstups",/*cache(3600),*/ getAllVstup);
+app.get("/vstup",/*cache(3600),*/ getAllVstup);
 
 app.get("/vstup/:id", getVstup);
 
