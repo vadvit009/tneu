@@ -20,23 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32691079-d662-4b0d-865b-edc96c11aaf1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/blog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/news/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/news/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/people/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/people/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/reviews/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/reviews/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/science/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/science/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/scienceActivity/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/scienceActivity/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/scienceProcess/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/scienceProcess/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/contollers/vstup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/contollers/vstup/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/models/news.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/models/news.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/models/people.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/models/people.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/routes/people.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/people.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/routes/science_activity.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/science_activity.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/routes/vstup.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routes/vstup.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SchrederApp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,7 +86,10 @@
       <workItem from="1613394506429" duration="599000" />
       <workItem from="1613433301599" duration="629000" />
       <workItem from="1613516119470" duration="9137000" />
-      <workItem from="1613942506112" duration="88000" />
+      <workItem from="1613942506112" duration="1012000" />
+      <workItem from="1613976498468" duration="9000" />
+      <workItem from="1613976662042" duration="6000" />
+      <workItem from="1613977274164" duration="8000" />
     </task>
     <servers />
   </component>
